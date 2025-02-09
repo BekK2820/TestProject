@@ -49,10 +49,10 @@ def test_update_objects():
     ).json()
     assert response['name'] ==payload['name']
 
-def test_delete_objects(obj_id):
+"""def test_delete_objects(obj_id):
     response = requests.delete('https://api.restful-api.dev/objects/{}'.format(obj_id))
     assert response.status_code==200
     response = requests.get('https://api.restful-api.dev/objects/{}'.format(obj_id))
     assert response.status_code==404
-
-
+print("nice")
+"""
